@@ -1,0 +1,125 @@
+export const categories = [
+  {
+    name: "Bags & Totes",
+    slug: "bags",
+    image: "/categories/bags.png",
+    description: "Everyday carry, naturally.",
+  },
+  {
+    name: "Home & Living",
+    slug: "home-living",
+    image: "/categories/home.png",
+    description: "Warm textures for your home.",
+  },
+  {
+    name: "Accessories",
+    slug: "accessories",
+    image: "/categories/accessories.png",
+    description: "Small details, natural character.",
+  },
+  {
+    name: "Gifting",
+    slug: "gifting",
+    image: "/categories/gifting.png",
+    description: "Thoughtful gifts with a lighter footprint.",
+  },
+];
+
+export const products = [
+  {
+    id: "1",
+    name: "Everyday Banana Fibre Tote",
+    category: "bags",
+    price: 899,
+    oldPrice: 1199,
+    image: "/products/tote.png",
+    galleryImages: ["/products/tote.png", "/products/tote.png"],
+    tag: "Bestseller",
+    description:
+      "A versatile everyday tote made with natural banana fibre. Designed for daily errands, work and weekend outings.",
+    material: "Banana fibre blend",
+    dimensions: "Approx. 14 × 12 inches",
+    care: "Keep dry. Spot clean with a soft damp cloth.",
+  },
+  {
+    id: "2",
+    name: "Handwoven Storage Basket",
+    category: "home-living",
+    price: 649,
+    oldPrice: null,
+    image: "/products/basket.png",
+    galleryImages: ["/products/basket.png", "/products/basket.png"],
+    tag: "Handwoven",
+    description:
+      "A practical handwoven basket for organising your home with natural texture.",
+    material: "Natural banana fibre",
+    dimensions: "Approx. 10 × 8 inches",
+    care: "Dust gently and keep away from prolonged moisture.",
+  },
+  {
+    id: "3",
+    name: "Natural Fibre Sling Bag",
+    category: "bags",
+    price: 1099,
+    oldPrice: null,
+    image: "/products/sling.png",
+    galleryImages: ["/products/sling.png", "/products/sling.png"],
+    tag: "New",
+    description: "A compact sling bag with a clean, timeless silhouette.",
+    material: "Banana fibre blend",
+    dimensions: "Approx. 9 × 7 inches",
+    care: "Spot clean only.",
+  },
+  {
+    id: "4",
+    name: "Woven Table Mat Set",
+    category: "home-living",
+    price: 499,
+    oldPrice: 599,
+    image: "/products/table-mat.png",
+    galleryImages: ["/products/table-mat.png", "/products/table-mat.png"],
+    tag: "Set of 4",
+    description:
+      "Bring natural warmth to your dining table with this woven mat set.",
+    material: "Natural banana fibre",
+    dimensions: "Approx. 12 inches each",
+    care: "Wipe gently after use. Store dry.",
+  },
+  {
+    id: "5",
+    name: "Banana Fibre Gift Hamper",
+    category: "gifting",
+    price: 1299,
+    oldPrice: null,
+    image: "/categories/gifting.png",
+    galleryImages: ["/categories/gifting.png"],
+    tag: "Gift pick",
+    description:
+      "A thoughtful gift selection packed in a reusable natural-fibre basket.",
+    material: "Banana fibre and assorted materials",
+    dimensions: "Varies by hamper",
+    care: "Care instructions depend on included products.",
+  },
+  {
+    id: "6",
+    name: "Woven Key & Utility Pouch",
+    category: "accessories",
+    price: 349,
+    oldPrice: null,
+    image: "/categories/accessories.png",
+    galleryImages: ["/categories/accessories.png"],
+    tag: "",
+    description:
+      "A compact pouch for small essentials, crafted with a natural woven finish.",
+    material: "Banana fibre blend",
+    dimensions: "Approx. 6 × 4 inches",
+    care: "Spot clean with a dry or slightly damp cloth.",
+  },
+];
+
+export const formatPrice = (price) =>
+  new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+  }).format(price);

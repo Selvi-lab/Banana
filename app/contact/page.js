@@ -1,0 +1,6 @@
+"use client";
+import { useState } from "react";
+export default function ContactPage() {
+  const [sent,setSent] = useState(false);
+  return <section className="section"><div className="container grid gap-10 md:grid-cols-2"><div><p className="eyebrow">We would love to hear from you</p><h1 className="section-title">Get in touch.</h1><p className="muted">Questions about products, bulk orders or collaborations? Send us a message. Connect this form to your email service or backend to receive enquiries.</p><div className="mt-7 space-y-3 text-sm"><p><b>Email:</b> Add your official support email</p><p><b>Phone:</b> Add your business phone number</p><p><b>Location:</b> Add your business address</p></div></div><form className="card space-y-4 p-6" onSubmit={(e)=>{e.preventDefault();setSent(true);}}><input className="input" required placeholder="Your name"/><input className="input" type="email" required placeholder="Email address"/><input className="input" placeholder="Subject"/><textarea className="input min-h-32" required placeholder="How can we help?"/><button className="btn btn-primary w-full">Send enquiry</button>{sent && <p className="text-sm text-[#183d2b]">Demo form submitted. Connect a backend to deliver this message.</p>}</form></div></section>;
+}

@@ -1,0 +1,5 @@
+
+SHOW DATABASES;
+USE banafibre;
+
+SHOW TABLES;
