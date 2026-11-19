@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BANAFIBRE
 
 Next.js 15 + React 19 storefront with MySQL 8.0.
@@ -37,3 +38,6 @@ See `database/banafibre_setup.sql`. If you already have `products`, `categories`
 - COD is the only implemented payment method.
 - Courier updates are manual admin updates, not a live carrier integration.
 - Review `AUDIT_REPORT.md` for repaired issues, setup requirements, and remaining production work.
+=======
+# Banana
+>>>>>>> 8958be9cc4660379caaa2ca8418fff477de78175
